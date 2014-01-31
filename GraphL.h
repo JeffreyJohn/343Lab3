@@ -15,9 +15,11 @@ using namespace std;
 class GraphL {
 public:
 	GraphL(); // constructor
-	buildGraph(); // put in edge costs
-	displayGraph();
-	depthFirstSearch();
+	~GraphL(); //destructor
+	void buildGraph(); // put in edge costs
+	void displayGraph();
+	int depthFirstSearch();
+	void makeEmpty();
 
 private:
 	struct EdgeNode; // forward reference for the compiler
@@ -29,6 +31,7 @@ private:
 		EdgeNode* nextEdge;
 	};
 
+	int size; 
 	// array of GraphNodes
 
 };
