@@ -8,11 +8,16 @@ const int MAXNODES = 100;
 GraphM::GraphM() {
 	size = 0;
 
+	//initialize  C[][] to all infinities
+
+	//initialize T[][] to all infinities, visited = false, path = 0
+
 }
 
 //----------------------------------------------------------------------------
 // buildGraph
 // puts in edge costs
+// NEEDS TO BE MODIFIED
 void GraphM::buildGraph(istream& infile) {
 	int fromNode, toNode;              // from and to node ends of edge
 
@@ -31,6 +36,7 @@ void GraphM::buildGraph(istream& infile) {
 		//    adjList[i].data.setData(infile);
 		// where adjList is the array of GraphNodes and
 		// data is the NodeData object inside of GraphNode
+		size++;
 	}
 
 	// read the edge data and add to the adjacency list
@@ -40,7 +46,6 @@ void GraphM::buildGraph(istream& infile) {
 
 		// insert the edge into the adjacency list for fromNode
 	}
-}
 }
 
 //----------------------------------------------------------------------------
@@ -75,8 +80,9 @@ void GraphM::displayAll(){
 //----------------------------------------------------------------------------
 //display
 //to display one shortest distance with path
-void GraphM::display(){
-
+void GraphM::display(int start, int end){
+	
+	//print T[start][end]
 }
 
 //----------------------------------------------------------------------------
@@ -84,3 +90,4 @@ void GraphM::display(){
 void GraphM::makeEmpty(){
 
 }
+
