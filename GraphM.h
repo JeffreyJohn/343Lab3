@@ -23,6 +23,7 @@ public:
 	int findShortestPath();
 	void displayAll();   //not general output
 	void display();      //to display one shortest distance with path
+	void makeEmpty(); 
 
 private:
 
