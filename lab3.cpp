@@ -29,12 +29,12 @@ int main() {
 		G.buildGraph(infile1);
 		if (infile1.eof())
 			break;
-		G.findShortestPath();
-		G.displayAll(); // display shortest distance, path to cout
-		G.display(3, 1); // display path from node 3 to 1 to cout
+//		G.findShortestPath();
+//		G.displayAll(); // display shortest distance, path to cout
+//		G.display(3, 1); // display path from node 3 to 1 to cout
 		// may be other calls to display
 	}
-	// part 2
+/*	// part 2
 	ifstream infile2("data32.txt");
 	if (!infile2) {
 		cout << "File could not be opened." << endl;
@@ -49,6 +49,7 @@ int main() {
 		G.displayGraph();
 		G.depthFirstSearch(); // find and display depth-first ordering to cout
 	}
+	*/
 	cout << endl;
 	return 0;
 }
